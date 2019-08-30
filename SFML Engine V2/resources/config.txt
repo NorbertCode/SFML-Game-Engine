@@ -1,0 +1,2 @@
+FPSCounterOn
+true
