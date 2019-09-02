@@ -1,2 +1,13 @@
-# SFML-Game-Engine
-An engine I made with SFML. Some thing were based on SonarSystems' engine, but most of them is new or changed. It has an example state that's just two rectangles that can collide.
+# SFML Game Engine
+An 2D game engine I made using SFML for personal purposes.
+# Features:
+- An example state
+- A simple game loop
+- A State manager
+- An Asset manager that works with:
+  - Textures
+  - Fonts
+  - .txt files
+- 2D Collision detection (showcased in the example state)
+- An FPS counter, which you can turn on or off using the config file.
+- Some basic math and input methods.
