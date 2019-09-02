@@ -11,4 +11,7 @@ An 2D game engine I made using SFML for personal purposes.
 - A text manage
 - 2D Collision detection (showcased in the example state)
 - An FPS counter, which you can turn on or off using the config file.
-- Some basic math and input methods.
+- Some basic math and input methods, like:
+  - Randomizing a number
+  - Returning the centralized position
+  - Checking if the player click on an object
