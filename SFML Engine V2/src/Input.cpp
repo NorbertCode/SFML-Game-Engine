@@ -35,4 +35,28 @@ namespace Engine
 		else
 			return false;
 	}
+	bool Input::isMouseOnButton(sf::RenderWindow &window, sf::Sprite button)
+	{
+		if (sf::Mouse::getPosition(window).x > button.getPosition().x && sf::Mouse::getPosition(window).x < button.getPosition().x + button.getGlobalBounds().width)
+		{
+			if (sf::Mouse::getPosition(window).y > button.getPosition().y && sf::Mouse::getPosition(window).y < button.getPosition().y + button.getGlobalBounds().height)
+			{
+				return true;
+			}
+			else return false;
+		}
+		else return false;
+	}
+	bool Input::isMouseOnButton(sf::RenderWindow &window, sf::RectangleShape button)
+	{
+		if (sf::Mouse::getPosition(window).x > button.getPosition().x && sf::Mouse::getPosition(window).x < button.getPosition().x + button.getGlobalBounds().width)
+		{
+			if (sf::Mouse::getPosition(window).y > button.getPosition().y && sf::Mouse::getPosition(window).y < button.getPosition().y + button.getGlobalBounds().height)
+			{
+				return true;
+			}
+			else return false;
+		}
+		else return false;
+	}
 }
