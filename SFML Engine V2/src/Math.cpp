@@ -1,8 +1,5 @@
 #include "Math.h"
 #include <random>
-/*#include <time.h>
-#include <stdio.h>
-#include <stdlib.h>*/
 
 //I'm not going to comment this, because it's not that complicated
 namespace Engine
@@ -12,10 +9,6 @@ namespace Engine
 		std::random_device randev;
 		std::uniform_int_distribution<int> d(minNumber, maxNumber);
 		return d(randev);
-		/*srand(time(NULL));
-		int amountOfNums = maxNumber - minNumber + 1;
-		float toReturn = rand() % amountOfNums + minNumber;
-		return toReturn;*/
 	}
 	sf::Vector2f Math::centralize(float maxSizeX, float maxSizeY, sf::Sprite object)
 	{
