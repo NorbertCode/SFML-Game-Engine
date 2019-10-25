@@ -3,13 +3,14 @@
 
 namespace Engine
 {
-	void TextManager::init(int charSize)
+	void TextManager::init(int charSize, sf::Color textColor, sf::Color outlineColor)
 	{
 		this->assets.loadFont("Roboto", ROBOTO_FONT_PATH);
 
 		this->text.setFont(this->assets.getFont("Roboto"));
 		this->text.setCharacterSize(charSize);
-		this->text.setOutlineColor(sf::Color::Black);
+		this->text.setFillColor(textColor);
+		this->text.setOutlineColor(outlineColor);
 		this->text.setOutlineThickness(1);
 	}
 	void TextManager::update(std::string text, sf::Vector2f pos)
