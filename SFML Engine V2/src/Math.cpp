@@ -22,12 +22,6 @@ namespace Engine
 		float tempY = maxSizeY / 2 - object.getGlobalBounds().height / 2;
 		return sf::Vector2f(tempX, tempY);
 	}
-	sf::Vector2f Math::centralize(float maxSizeX, float maxSizeY, sf::Text object)
-	{
-		float tempX = maxSizeX / 2 - object.getGlobalBounds().width / 2;
-		float tempY = maxSizeY / 2 - object.getGlobalBounds().height / 2;
-		return sf::Vector2f(tempX, tempY);
-	}
 	sf::Vector2f Math::centralize(sf::RenderWindow &window, sf::Sprite object)
 	{
 		float tempX = window.getSize().x / 2 - object.getGlobalBounds().width / 2;
@@ -35,12 +29,6 @@ namespace Engine
 		return sf::Vector2f(tempX, tempY);
 	}
 	sf::Vector2f Math::centralize(sf::RenderWindow &window, sf::RectangleShape object)
-	{
-		float tempX = window.getSize().x / 2 - object.getGlobalBounds().width / 2;
-		float tempY = window.getSize().y / 2 - object.getGlobalBounds().height / 2;
-		return sf::Vector2f(tempX, tempY);
-	}
-	sf::Vector2f Math::centralize(sf::RenderWindow &window, sf::Text object)
 	{
 		float tempX = window.getSize().x / 2 - object.getGlobalBounds().width / 2;
 		float tempY = window.getSize().y / 2 - object.getGlobalBounds().height / 2;
