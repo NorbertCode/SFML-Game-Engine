@@ -14,4 +14,5 @@ An 2D game engine I made using SFML for personal purposes.
 - Some basic math and input methods, like:
   - Randomizing a number
   - Returning the centralized position
-  - Checking if the player click on an object
+  - Checking if the player clicked on an object
+  - Checking if the cursor is hovering over an object
